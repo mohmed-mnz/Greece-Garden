@@ -12,34 +12,34 @@ export class InfoComponent {
 
 
   images = [
-    { url: '../../../assets/images/1.png', category: 'تركيب مظلات' },
-        { url: '../../../assets/images/2.png', category: 'تركيب مظلات' },
-    { url: '../../../assets/images/3.png', category: 'تركيب مظلات' },
-    { url: '../../../assets/images/4.png', category: 'تركيب مظلات' },
+    { url: './assets/images/1.png', category: 'تركيب مظلات' },
+        { url: './assets/images/2.png', category: 'تركيب مظلات' },
+    { url: './assets/images/3.png', category: 'تركيب مظلات' },
+    { url: './assets/images/4.png', category: 'تركيب مظلات' },
 
-  
-    { url: '../../../assets/images/5.jpg', category: 'تنسيق حدائق' },
-    { url: '../../../assets/images/6.jpg', category: 'تنسيق حدائق' },
-    { url: '../../../assets/images/7.jpg', category: 'تنسيق حدائق' },
-    { url: '../../../assets/images/8.jpg', category: 'تنسيق حدائق' },
-    
 
-    { url: '../../../assets/images/9.png', category: ' شلالات' },
-    { url: '../../../assets/images/10.png', category: ' شلالات'},
-    { url: '../../../assets/images/11.png', category: ' شلالات' },
-    { url: '../../../assets/images/12.png', category: ' شلالات' },
-   
+    { url: './assets/images/5.jpg', category: 'تنسيق حدائق' },
+    { url: './assets/images/6.jpg', category: 'تنسيق حدائق' },
+    { url: './assets/images/7.jpg', category: 'تنسيق حدائق' },
+    { url: './assets/images/8.jpg', category: 'تنسيق حدائق' },
 
-    { url: '../../../assets/images/13.webp', category: ' تشطيبات' },
-    { url: '../../../assets/images/14.jpg', category: ' تشطيبات' },
-    { url: '../../../assets/images/15.jpg', category: ' تشطيبات' },
-    { url: '../../../assets/images/16.jpg', category: ' تشطيبات' },
+
+    { url: './assets/images/9.png', category: ' شلالات' },
+    { url: './assets/images/10.png', category: ' شلالات'},
+    { url: './assets/images/11.png', category: ' شلالات' },
+    { url: './assets/images/12.png', category: ' شلالات' },
+
+
+    { url: './assets/images/13.webp', category: ' تشطيبات' },
+    { url: './assets/images/14.jpg', category: ' تشطيبات' },
+    { url: './assets/images/15.jpg', category: ' تشطيبات' },
+    { url: './assets/images/16.jpg', category: ' تشطيبات' },
 
   ];
 
- 
 
-  selectedCategory = 'الجميع'; 
+
+  selectedCategory = 'الجميع';
   filteredImages = this.images; // Initially, show all images
   currentPage = 1;
   itemsPerPage = 4;
@@ -56,10 +56,10 @@ export class InfoComponent {
     if (page >= 1 && page <= this.totalPages) {
       this.currentPage = page;
     }
-  } 
+  }
 
   filterImagesByCategory(category: string): void {
-    this.selectedCategory = category; 
+    this.selectedCategory = category;
     if (category === 'الجميع') {
       this.filteredImages = this.images;
     } else {
