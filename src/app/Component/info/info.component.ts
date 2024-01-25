@@ -12,25 +12,25 @@ export class InfoComponent {
 
 
   images = [
-    { url: './assets/images/1.png', category: 'تركيب مظلات' },
-        { url: './assets/images/2.png', category: 'تركيب مظلات' },
-    { url: './assets/images/3.png', category: 'تركيب مظلات' },
-    { url: './assets/images/4.png', category: 'تركيب مظلات' },
+    { url: './assets/images/1.webp', category: 'تركيب مظلات' },
+        { url: './assets/images/2.webp', category: 'تركيب مظلات' },
+    { url: './assets/images/3.webp', category: 'تركيب مظلات' },
+    { url: './assets/images/4.webp', category: 'تركيب مظلات' },
 
 
-    { url: './assets/images/5.jpg', category: 'تنسيق حدائق' },
-    { url: './assets/images/6.jpg', category: 'تنسيق حدائق' },
-    { url: './assets/images/7.jpg', category: 'تنسيق حدائق' },
-    { url: './assets/images/8.jpg', category: 'تنسيق حدائق' },
+    { url: './assets/images/5.webp', category: 'تنسيق حدائق' },
+    { url: './assets/images/6.webp', category: 'تنسيق حدائق' },
+    { url: './assets/images/7.webp', category: 'تنسيق حدائق' },
+    { url: './assets/images/8.webp', category: 'تنسيق حدائق' },
 
 
-    { url: './assets/images/9.png', category: ' شلالات' },
-    { url: './assets/images/10.png', category: ' شلالات'},
-    { url: './assets/images/11.png', category: ' شلالات' },
-    { url: './assets/images/12.png', category: ' شلالات' },
+    { url: './assets/images/9.webp', category: ' شلالات' },
+    { url: './assets/images/10.webp', category: ' شلالات'},
+    { url: './assets/images/11.webp', category: ' شلالات' },
+    { url: './assets/images/12.webp', category: ' شلالات' },
 
 
-    { url: './assets/images/13.webp', category: ' تشطيبات' },
+    { url: './assets/images/13.jpg', category: ' تشطيبات' },
     { url: './assets/images/14.jpg', category: ' تشطيبات' },
     { url: './assets/images/15.jpg', category: ' تشطيبات' },
     { url: './assets/images/16.jpg', category: ' تشطيبات' },
