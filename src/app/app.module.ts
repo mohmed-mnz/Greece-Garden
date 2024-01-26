@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Import BrowserAnimationsModule
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { OurworkComponent } from './Component/ourwork/ourwork.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     InfoComponent,
     SliderComponent,
     HomeComponent,
-    ServiesComponent
+    ServiesComponent,
+    OurworkComponent
   ],
   imports: [
     BrowserModule,
