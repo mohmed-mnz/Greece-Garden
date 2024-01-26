@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { OurworkComponent } from './Component/ourwork/ourwork.component';
+import { EngineerComponent } from './Component/engineer/engineer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { OurworkComponent } from './Component/ourwork/ourwork.component';
     SliderComponent,
     HomeComponent,
     ServiesComponent,
-    OurworkComponent
+    OurworkComponent,
+    EngineerComponent
   ],
   imports: [
     BrowserModule,
