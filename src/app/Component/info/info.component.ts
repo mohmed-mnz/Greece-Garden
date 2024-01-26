@@ -13,7 +13,7 @@ export class InfoComponent {
 
   images = [
     { url: './assets/images/1.png', category: 'تركيب مظلات' },
-        { url: './assets/images/2.png', category: 'تركيب مظلات' },
+    { url: './assets/images/2.png', category: 'تركيب مظلات' },
     { url: './assets/images/3.png', category: 'تركيب مظلات' },
     { url: './assets/images/4.png', category: 'تركيب مظلات' },
 
