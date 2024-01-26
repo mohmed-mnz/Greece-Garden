@@ -1,33 +1,35 @@
- <div class=" py-5" id="portfolio">
-    <div class="container py-5 container text-center bg-light" dir="rtl">
-        <h2 class="text-center pb-2">أعمالنا في مجال تنسيق الحدائق</h2>
+<div class=" py-5 bg-light" id="portfolio">
+  <div class="container py-5 container text-center " dir="rtl">
+      <h2 class="text-center pb-2">أعمالنا في مجال تنسيق الحدائق</h2>
 
 
 
 
-        <div class="filter-buttons">
-          <button *ngFor="let category of getCategories()"
-           (click)="filterImagesByCategory(category)" class="rounded-pill border-0 " [ngClass]="{ 'active': selectedCategory === category }">
-            {{ category }}
-          </button>
+      <div class="filter-buttons">
+        <button *ngFor="let category of getCategories()"
+         (click)="filterImagesByCategory(category)" class="rounded-pill border-0 " [ngClass]="{ 'active': selectedCategory === category }">
+          {{ category }}
+        </button>
+      </div>
+      
+      <div class="image-container d-flex align-items-center justify-content-center mt-2">
+        <div *ngFor="let image of filteredImages | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage }" class="col-md-3 p-2">
+          <img [src]="image.url" alt="{{ image.category }}">
         </div>
-        
-        <div class="image-container d-flex align-items-center justify-content-center mt-2">
-          <div *ngFor="let image of filteredImages | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage }" class="col-md-3 p-2">
-            <img [src]="image.url" alt="{{ image.category }}">
-          </div>
-        </div>
-        
-        <div class="pagination d-flex align-items-center justify-content-center">
-          <pagination-controls
-            (pageChange)="paginate($event)"
-           
-          ></pagination-controls>
-        </div>
-              
-        
-              
-    </div>
+      </div>
+      
+      <div class="pagination d-flex align-items-center justify-content-center">
+        <pagination-controls
+          (pageChange)="paginate($event)"
+         
+        ></pagination-controls>
+      </div>
+
+      
+            
+      
+            
+  </div>
 
 </div> 
 
@@ -35,4 +37,3 @@
 
 
 
- 
