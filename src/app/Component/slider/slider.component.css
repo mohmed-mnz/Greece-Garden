@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 .layer {
@@ -25,7 +26,7 @@
     align-items: center;
     position: absolute;
     top: 0;
-    color: white;
+    color: whitesmoke;
     text-align: center;
 
 }
