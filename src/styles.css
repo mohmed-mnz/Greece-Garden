@@ -1,19 +1,22 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans+Arabic&family=Noto+Naskh+Arabic&family=Noto+Sans+Arabic:wght@200;400&display=swap');
+
 
 body{
-    font-family: 'Cairo', sans-serif;
-}
+  font-family: 'Cairo', sans-serif;
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+font-family: 'Noto Naskh Arabic', serif;
+font-family: 'Noto Sans Arabic', sans-serif;}
 
 :root
 {
     --main-color:#E1F0DA;
-   
    --icons-color:#527853;
 
    --footer-color:#D4E7C5;
    
 }
+
 
 .bg-main
 {

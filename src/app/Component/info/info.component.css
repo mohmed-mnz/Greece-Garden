@@ -1,3 +1,11 @@
+section{
+
+   
+  background-size: cover;
+
+   background-image: url('../../../assets/images/imgcover.jpeg');
+
+}
 
 img {
   transition: transform 0.3s ease;
