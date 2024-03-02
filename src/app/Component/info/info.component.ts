@@ -37,10 +37,10 @@ export class InfoComponent implements OnInit {
     { url: './assets/images/10.webp', category: 'شلالات' },
     { url: './assets/images/11.webp', category: 'شلالات' },
     { url: './assets/images/12.webp', category: 'شلالات' },
-    { url: './assets/images/13.jpg', category: 'تشطيبات' },
-    { url: './assets/images/14.jpg', category: 'تشطيبات' },
-    { url: './assets/images/15.jpg', category: 'تشطيبات' },
-    { url: './assets/images/16.jpg', category: 'تشطيبات' },
+    { url: './assets/images/13.jpeg', category: 'تيل صناعي' },
+    { url: './assets/images/14.jpeg', category: 'تيل صناعي' },
+    { url: './assets/images/15.jpeg', category: 'تيل صناعي' },
+    { url: './assets/images/16.jpeg', category: 'تيل صناعي' },
   ];
 
 
