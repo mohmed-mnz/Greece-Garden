@@ -14,7 +14,7 @@
           {{ category }}
         </button>
       </div>
-  
+
       <div class="image-container d-flex align-items-center justify-content-center mt-2" [ngClass]="{ 'fade-in': showAnimation }">
         <div
           *ngFor="let image of filteredImages | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage }"
@@ -23,11 +23,10 @@
           <img [src]="image.url" alt="{{ image.category }}">
         </div>
       </div>
-  
-      <div class="pagination d-flex align-items-center justify-content-center">
+
+      <div class="pagination d-flex align-items-center justify-content-center" [@fade]="showAnimation ? 'void' : '*'">
         <pagination-controls (pageChange)="paginate($event)"></pagination-controls>
       </div>
     </div>
   </div>
-  
 </section>

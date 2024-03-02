@@ -1,4 +1,7 @@
+// navbar.component.ts
+
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  constructor(private route: ActivatedRoute) {}
+
+  isActive(route: string): boolean {
+    return this.route.snapshot.routeConfig?.path === route;
+  }
 }

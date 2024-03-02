@@ -1,6 +1,6 @@
 section{
 
-   
+
   background-size: cover;
 
    background-image: url('../../../assets/images/imgcover.jpeg');
@@ -53,4 +53,43 @@ img:hover {
 
 .pagination li.page-item {
   margin: 0 5px;
+}
+
+/* Your existing styles here */
+
+.pagination {
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.pagination a {
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  margin: 0 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination .active a {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* Optional: Add responsive styles if needed */
+@media (max-width: 768px) {
+  .pagination {
+    font-size: 14px;
+  }
 }

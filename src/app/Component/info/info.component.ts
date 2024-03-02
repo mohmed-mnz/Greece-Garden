@@ -9,11 +9,11 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
     trigger('fade', [
       transition(':enter', [
         style({ opacity: 0 }),
-        animate(1000, style({ opacity: 1 }))
+        animate('2000ms ease', style({ opacity: 1 }))
       ]),
       transition(':leave', [
         style({ opacity: 1 }),
-        animate(1000, style({ opacity: 0 }))
+        animate('2000ms ease', style({ opacity: 0 }))
       ])
     ])
   ]
@@ -43,8 +43,9 @@ export class InfoComponent implements OnInit {
     { url: './assets/images/16.jpg', category: 'تشطيبات' },
   ];
 
+
   selectedCategory = 'الجميع';
-  filteredImages = this.images; // Initially, show all images
+  filteredImages = this.images;
   currentPage = 1;
   itemsPerPage = 4;
 
@@ -80,12 +81,11 @@ export class InfoComponent implements OnInit {
   ngOnInit() {
     this.checkScroll();
 
-    // Automatically switch images every 3 seconds
     setInterval(() => {
       if (this.showAnimation) {
         this.paginate((this.currentPage % this.totalPages) + 1);
       }
-    }, 3000);
+    }, 5000);
   }
 
   @HostListener('window:scroll', [])
@@ -98,12 +98,8 @@ export class InfoComponent implements OnInit {
     const componentPosition = element.getBoundingClientRect().top;
     const scrollPosition = window.scrollY !== undefined ? window.scrollY : window.innerHeight;
 
-    console.log('Scroll Position:', scrollPosition);
-    console.log('Component Position:', componentPosition);
-
     if (scrollPosition > componentPosition - window.innerHeight + 300 && !this.showAnimation) {
       this.showAnimation = true;
-      console.log('Animation Triggered');
     }
   }
 }

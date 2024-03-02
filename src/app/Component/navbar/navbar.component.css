@@ -1,6 +1,6 @@
 button:hover {
-    background-color: #009970 !important;
-    border-color: #009970 !important; 
+    background-color: #0bff9eba !important;
+    border-color: #2cd6a9 !important;
     border: none;
     transition: all 1s;
     -webkit-transition: all 1s;
@@ -10,3 +10,62 @@ button:hover {
 
 }
 
+
+/* styles.css */
+
+
+/* navbar.component.css */
+.Navigation a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    position: relative;
+    color: #10ed56;
+    transition: color 0.3s ease-in-out;
+    display: inline-block; /* Ensure the anchor element is displayed as a block */
+}
+
+.Navigation span {
+    transition: color 0.3s ease-in-out;
+}
+
+.Navigation a::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 2px;
+    bottom: 0;
+    left: 10px;
+    background-color: transparent;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Adjust hover styles for anchor elements inside list items */
+.Navigation li:hover a span {
+    color: #000;
+}
+
+.Navigation li:hover a::after {
+    transform-origin: left;
+    transform: scaleX(1);
+    background-color: #000;
+}
+
+.Navigation a.active span {
+    color: #47e1b8;
+}
+
+.Navigation a.active::after {
+    transform-origin: left;
+    transform: scaleX(1);
+    background-color: #009970;
+}
+
+/* Add a rule to remove the button's hover effect */
+.Navigation button:hover {
+    background-color: transparent;
+    border-color: transparent;
+text-decoration: none !important;
+}
