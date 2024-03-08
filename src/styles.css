@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Sans+Arabic&family=Noto+Naskh+Arabic&family=Noto+Sans+Arabic:wght@200;400&display=swap');
-
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
 
 body{
   font-family: 'Cairo', sans-serif;
@@ -14,7 +15,7 @@ font-family: 'Noto Sans Arabic', sans-serif;}
    --icons-color:#527853;
 
    --footer-color:#D4E7C5;
-   
+
 }
 
 

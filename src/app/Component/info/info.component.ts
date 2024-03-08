@@ -43,7 +43,6 @@ export class InfoComponent implements OnInit {
     { url: './assets/images/16.jpeg', category: 'تيل صناعي' },
   ];
 
-
   selectedCategory = 'الجميع';
   filteredImages = this.images;
   currentPage = 1;
@@ -101,5 +100,15 @@ export class InfoComponent implements OnInit {
     if (scrollPosition > componentPosition - window.innerHeight + 300 && !this.showAnimation) {
       this.showAnimation = true;
     }
+  }
+
+  hoverImage(event: MouseEvent): void {
+    const target = event.target as HTMLImageElement;
+    target.style.transform = 'scale(1.1)';
+  }
+
+  unhoverImage(event: MouseEvent): void {
+    const target = event.target as HTMLImageElement;
+    target.style.transform = 'scale(1)';
   }
 }

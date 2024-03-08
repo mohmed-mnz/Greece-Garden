@@ -16,6 +16,9 @@ import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { OurworkComponent } from './Component/ourwork/ourwork.component';
 import { EngineerComponent } from './Component/engineer/engineer.component';
+import { SomeWorksComponent } from './Component/some-works/some-works.component';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,8 @@ import { EngineerComponent } from './Component/engineer/engineer.component';
     HomeComponent,
     ServiesComponent,
     OurworkComponent,
-    EngineerComponent
+    EngineerComponent,
+    SomeWorksComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,8 @@ import { EngineerComponent } from './Component/engineer/engineer.component';
     BrowserAnimationsModule,
     NgxPaginationModule,
     ToastrModule.forRoot(),
+    AnimateOnScrollModule
+
   ],
   bootstrap: [AppComponent]
 })

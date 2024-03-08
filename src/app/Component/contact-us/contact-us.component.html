@@ -1,5 +1,6 @@
-<div class="py-5 mb-0 coverr " >
-  <div class="container mt-5 " >
+<div pAnimateOnScroll enterClass="fadein" leaveClass="fadeout"
+  class="py-5 mb-0 coverr  flex box shadow-4 justify-content-center align-items-center h-10rem w-10rem sm:h-15rem sm:w-15rem border-round animation-duration-1000">
+  <div class="container mt-5 ">
     <div class="row" id="contact">
       <div class="col-md-6">
         <!-- Form Section -->
@@ -8,29 +9,32 @@
           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <div class="mb-3">
               <label for="name_input" class="form-label">الاسم</label>
-              <input type="text" class="form-control" id="name_input" formControlName="name" placeholder="ادخل الاسم هنا"
+              <input type="text" class="form-control" id="name_input" formControlName="name"
+                placeholder="ادخل الاسم هنا"
                 [class.is-invalid]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
               <div *ngIf="contactForm.get('name')?.hasError('required') && contactForm.get('name')?.touched"
                 class="invalid-feedback">من فضلك ادخل اسمك</div>
             </div>
             <div class="mb-3">
               <label for="email_addr" class="form-label">البريد الالكتروني</label>
-              <input type="email" class="form-control" id="email_addr" formControlName="email" placeholder="name@gmail.com"
+              <input type="email" class="form-control" id="email_addr" formControlName="email"
+                placeholder="name@gmail.com"
                 [class.is-invalid]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
               <div *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched"
                 class="invalid-feedback">من فضلك ادخل بريد الكتروني صالح</div>
             </div>
             <div class="mb-3">
               <label for="phone_input" class="form-label">رقم الهاتف</label>
-              <input type="tel" class="form-control" id="phone_input" formControlName="phone" placeholder="ادخل رقم الهاتف" dir="rtl"
+              <input type="tel" class="form-control" id="phone_input" formControlName="phone"
+                placeholder="ادخل رقم الهاتف" dir="rtl"
                 [class.is-invalid]="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched">
               <div *ngIf="contactForm.get('phone')?.hasError('required') && contactForm.get('phone')?.touched"
                 class="invalid-feedback">من فضلك ادخل رقم هاتف صالح</div>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">اترك لنا رسالة</label>
-              <textarea class="form-control" id="message" formControlName="message"
-                placeholder="اكتب رسالتك هنا" rows="5"
+              <textarea class="form-control" id="message" formControlName="message" placeholder="اكتب رسالتك هنا"
+                rows="5"
                 [class.is-invalid]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"></textarea>
               <div *ngIf="contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched"
                 class="invalid-feedback">من فضلك اترك لنا رساله </div>
@@ -60,8 +64,10 @@
           <div class="col-md-12">
             <div class="map-section bg-light p-4 rounded">
               <h2>الموقع الحالي</h2>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170181.835508592!2d46.65053583775392!3d24.738240581889397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0216b496510f%3A0xbe33180c8e3c6d24!2sRiyadh!5e0!3m2!1sen!2ssa!4v1682505538511!5m2!1sen!2ssa"
-                width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170181.835508592!2d46.65053583775392!3d24.738240581889397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0216b496510f%3A0xbe33180c8e3c6d24!2sRiyadh!5e0!3m2!1sen!2ssa!4v1682505538511!5m2!1sen!2ssa"
+                width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
           </div>
