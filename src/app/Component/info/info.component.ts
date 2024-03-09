@@ -81,10 +81,12 @@ export class InfoComponent implements OnInit {
     this.checkScroll();
 
     setInterval(() => {
-      if (this.showAnimation) {
-        this.paginate((this.currentPage % this.totalPages) + 1);
+      if (this.showAnimation && this.currentPage < this.totalPages) {
+        this.currentPage++;
+      } else {
+        this.currentPage = 1; // Reset to first page if reached the last page
       }
-    }, 5000);
+    }, 5000); // Adjust interval as needed
   }
 
   @HostListener('window:scroll', [])
@@ -104,11 +106,23 @@ export class InfoComponent implements OnInit {
 
   hoverImage(event: MouseEvent): void {
     const target = event.target as HTMLImageElement;
-    target.style.transform = 'scale(1.1)';
+    target.style.transform = 'scale(1.05)';
   }
 
   unhoverImage(event: MouseEvent): void {
     const target = event.target as HTMLImageElement;
     target.style.transform = 'scale(1)';
+  }
+
+  prevPage(): void {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+    }
+  }
+
+  nextPage(): void {
+    if (this.currentPage < this.totalPages) {
+      this.currentPage++;
+    }
   }
 }

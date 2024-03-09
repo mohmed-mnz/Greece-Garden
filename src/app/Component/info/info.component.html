@@ -1,8 +1,7 @@
 <section>
   <div class="py-5" id="portfolio" [@fade]="showAnimation ? 'void' : '*'">
-
     <div class="container py-5 container text-center" dir="rtl">
-      <h2 class="text-center pb-2">أعمال نفتخر بها </h2>
+      <h2 class="text-center pb-2"><strong>أعمال نفتخر بها</strong></h2>
 
       <div class="filter-buttons">
         <button
@@ -11,7 +10,7 @@
           class="rounded-pill border-0"
           [ngClass]="{ 'active': selectedCategory === category }"
         >
-          {{ category }}
+          <strong>{{ category }}</strong>
         </button>
       </div>
 
@@ -24,8 +23,14 @@
         </div>
       </div>
 
-      <div class="pagination d-flex align-items-center justify-content-center" [@fade]="showAnimation ? 'void' : '*'">
-        <pagination-controls (pageChange)="paginate($event)"></pagination-controls>
+      <div class="pagination d-none d-sm-flex justify-content-center mt-3" [@fade]="showAnimation ? 'void' : '*'">
+        <button class="btn btn-success mr-2" [disabled]="currentPage === 1" (click)="prevPage()">
+          <strong><i class="fas fa-chevron-right"></i></strong>
+        </button>
+        <span class="mx-2"><strong>{{ currentPage }}</strong></span>
+        <button class="btn btn-success ml-2" [disabled]="currentPage === totalPages" (click)="nextPage()">
+          <strong><i class="fas fa-chevron-left"></i></strong>
+        </button>
       </div>
     </div>
   </div>
