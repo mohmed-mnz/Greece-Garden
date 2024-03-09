@@ -1,3 +1,7 @@
+#services{
+  background-color: #f8f9fa;
+}
+
 @keyframes fadeInUp {
     from {
       opacity: 0;

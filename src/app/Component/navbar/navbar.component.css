@@ -63,9 +63,16 @@ button:hover {
     background-color: #009970;
 }
 
-/* Add a rule to remove the button's hover effect */
 .Navigation button:hover {
     background-color: transparent;
     border-color: transparent;
 text-decoration: none !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 15px;
 }

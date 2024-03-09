@@ -1,3 +1,4 @@
+
 <div pAnimateOnScroll enterClass="fadein" leaveClass="fadeout"
   class="py-5 mb-0 coverr  flex box shadow-4 justify-content-center align-items-center h-10rem w-10rem sm:h-15rem sm:w-15rem border-round animation-duration-1000">
   <div class="container mt-5 ">
@@ -5,8 +6,8 @@
       <div class="col-md-6">
         <!-- Form Section -->
         <div class="form-section bg-light p-4 rounded">
-          <h2 class="mb-4">تواصل معنا بسهولة </h2>
-          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <strong> <h2 class="mb-4">تواصل معنا بسهولة </h2></strong>
+                   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <div class="mb-3">
               <label for="name_input" class="form-label">الاسم</label>
               <input type="text" class="form-control" id="name_input" formControlName="name"

@@ -14,32 +14,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-5 mb-2 mb-lg-0 Navigation">
-                    <li class="nav-item">
-                        <a class="nav-link px-3 text-dark" href="#home">الرئيسية</a>
+                    <li class="nav-item" [ngClass]="{ 'active': activeSection === 'home' }">
+                        <a class="nav-link px-3 text-dark" href="#home" (click)="scrollTo('home', $event)">الرئيسية</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3 text-dark" href="#portfolio">أعمالنا</a>
+                    <li class="nav-item" [ngClass]="{ 'active': activeSection === 'portfolio' }">
+                        <a class="nav-link px-3 text-dark" href="#portfolio" (click)="scrollTo('portfolio', $event)">أعمالنا</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3 text-dark" href="#services">خدماتنا</a>
+                    <li class="nav-item" [ngClass]="{ 'active': activeSection === 'services' }">
+                        <a class="nav-link px-3 text-dark" href="#services" (click)="scrollTo('services', $event)">خدماتنا</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3 text-dark" href="#about">نبذه عنا</a>
+                    <li class="nav-item" [ngClass]="{ 'active': activeSection === 'about' }">
+                        <a class="nav-link px-3 text-dark" href="#about" (click)="scrollTo('about', $event)">نبذه عنا</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3 text-dark" href="#contact">تواصل معنا</a>
+                    <li class="nav-item" [ngClass]="{ 'active': activeSection === 'contact' }">
+                        <a class="nav-link px-3 text-dark" href="#contact" (click)="scrollTo('contact', $event)">تواصل معنا</a>
                     </li>
-
                 </ul>
-<ul class="navbar-nav me-5 mb-2 mb-lg-0">
-    <li class="nav-item px-3">
-        <button class="btn-success mx-0 my-0 rounded-pill fs-5 border ">
-            <a class="nav-link fw-bold"
-                href="https://wa.me/0541029487/?text=hi there Garden's Greece staff"> اتصل بنا <i
-                    class="fa-brands fa-whatsapp px-1"></i></a>
-        </button>
-    </li>
-</ul>
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                    <li class="nav-item px-3">
+                        <button class="btn-success mx-0 my-0 rounded-pill fs-5 border ">
+                            <a class="nav-link fw-bold"
+                                href="https://wa.me/0541029487/?text=hi there Garden's Greece staff"> اتصل بنا <i
+                                    class="fa-brands fa-whatsapp px-1"></i></a>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
